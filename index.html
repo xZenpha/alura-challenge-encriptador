@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/7214452.png" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Challenge: Encriptador de Texto</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="img/Logo.png" alt="Encriptador" />
+    </header>
+    <main>
+      <!-- Sección del Encriptador -->
+      <section class="texto">
+        <div class="entrada">
+          <textarea
+            class="text-area"
+            cols="30"
+            rows="10"
+            placeholder="Ingrese texto aquí"
+          ></textarea>
+          <p class="informacion">Solo letras minúsculas y sin acento</p>
+          <div class="botones">
+            <button class="btn-encriptar" onclick="btnEncriptar()">
+              Encriptar
+            </button>
+            <button class="btn-desencriptar" onclick="btnDesencriptar()">
+              Desencriptar
+            </button>
+          </div>
+        </div>
+        <div class="salida">
+          <textarea class="mensaje" cols="30" rows="10" readonly></textarea>
+          <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+        </div>
+      </section>
+      <!-- Sección de imagen -->
+      <section class="imagen">
+        <img class="muñeco" src="img/Muñeco.png" alt="Muñeco" />
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

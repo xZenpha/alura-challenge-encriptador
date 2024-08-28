@@ -1,0 +1,124 @@
+:root {
+  --background-color: #f3f5fc;
+  --text-color: #0a3871;
+  --button-background: #d8dfe8;
+  --button-border-radius: 24px;
+  --font-family: "Inter", sans-serif;
+  --font-size-large: 32px;
+  --font-size-small: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  background: var(--background-color);
+  font-size: var(--font-size-large);
+  line-height: 1.5;
+}
+
+header {
+  padding: 10px 16px;
+}
+
+.logo {
+  width: 10%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 50px;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 60%;
+}
+
+.entrada,
+.salida {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-area,
+.mensaje {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid var(--text-color);
+  border-radius: 10px;
+  resize: none;
+  color: var(--text-color);
+  background-color: white;
+  font-size: var(--font-size-small);
+}
+
+.text-area::placeholder {
+  color: var(--text-color);
+}
+
+.informacion {
+  color: #495057;
+  font-size: var(--font-size-small);
+  margin-top: 10px;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 15px;
+}
+
+button {
+  cursor: pointer;
+  border-radius: var(--button-border-radius);
+  height: 50px;
+  width: 48%;
+  font-size: var(--font-size-small);
+}
+
+.btn-encriptar {
+  background-color: var(--text-color);
+  color: white;
+  border: none;
+}
+
+.btn-desencriptar {
+  background: var(--button-background);
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+}
+
+.btn-copiar {
+  background-color: var(--button-background);
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  margin-top: 20px;
+  width: 100%;
+}
+
+.imagen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.muñeco {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
